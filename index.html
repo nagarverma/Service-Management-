@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Manage Healthcare Services</h1>
+
+    <div class="form-container">
+        <form id="serviceForm" action="api.php" method="post">
+            <input type="text" name="name" placeholder="Service Name" required>
+            <textarea name="description" placeholder="Service Description"></textarea>
+            <input type="number" name="price" placeholder="Service Price" required>
+            <button type="submit">Add Service</button>
+        </form>
+    </div>
+
+    <h2>All Services</h2>
+    <div id="services"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
